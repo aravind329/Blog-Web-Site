@@ -51,9 +51,9 @@ app.get("/posts/:title",function(req,res){
     if(storedTitle===requestTitle){
       res.render("post",{postTitle: post.postTitle, postData: post.postData});
     }
-    else{
-      console.log("Match Not Found");
-    }
+//     else{
+//       console.log("Match Not Found");
+//     }
   });
 });
 
